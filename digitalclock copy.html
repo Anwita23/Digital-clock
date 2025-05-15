@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital clock white</title>
+    <style>
+        *{
+            text-transform: uppercase;
+            font-family: 'Quicksand';
+            transition: 250ms;
+        }
+    header{
+        display: flex;align-self: center;
+        justify-content: center;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.183);
+    
+    }
+        section{
+            height: 50vh;
+            display: flex;
+            gap:10px;
+            align-items: center;
+            justify-content: center;
+            /* transition: 1000ms; */
+        }
+    
+        div{
+            height: 200px;
+            width: 200px;
+            border:2px solid rgba(160, 160, 160, 0.338);
+            border-radius:10px;   
+            display: grid; 
+            place-items: center;
+            box-shadow: 2px 2px 15px 2px grey;
+            /* transition: 1000ms; */
+           }
+           h1{
+            font-size: 50px;
+
+           }
+           nav{
+            height: 5vh;
+            text-align: end;
+
+           }
+           .darkmode{
+            background-color: rgba(0, 0, 0, 0.916);
+            color:white;
+            transition:500ms;
+           }
+    </style>
+</head>
+<body>
+    <nav><label for="darkmode" style="text-transform: capitalize;">darkmode</label>
+        <input type="checkbox" id="darkmode" name="dark"></nav>
+    <section>
+        <div id="hourbox">
+            <h1 id="hours">00</h1>
+            <p>hours</p>
+            </div>
+        <div id="minutebox">
+             <h1 id="minutes">00</h1>
+            <p>minutes</p>
+        </div>
+       
+        <div id="secondbox">
+            <h1 id="seconds">00</h1>
+            <p>seconds</p>
+            </div>  
+    </section>
+    <header >Digital Clock</header>
+
+   
+    
+    <script src="./digitalclock copy.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital clock ver2</title>
+  
+    <style>
+         @font-face {
+            font-family: face;
+            src: url(./TheLedDisplaySt.ttf);
+         }
+         @font-face {
+            font-family: dotsone;
+            src: url(./bus-stop.ttf);
+         }
+         @font-face {
+            font-family: digitalone;
+            src: url(./digital-7.ttf);
+         }
+        *:not(section,main,h1,div){
+            background-color: black;
+        }
+        *{
+            transition:250ms;
+        }
+        
+        main{
+            height: 300px;
+            width: 800px;
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+            
+            border-radius: 20px;
+        }
+
+        section{
+            height: 50vh;
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+            /* gap:20px */
+            
+
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            color:white;
+            font-family: 'quicksand';
+        }
+        h1{
+            font-size: 120px;
+            color:rgb(48, 48, 48);
+            /* text-shadow:inset 2px 2px 20px rgb(168, 224, 255); */
+            /* inset: 2px 2px 20px rgb(168, 224, 255); */
+            /* box-shadow:2px 2px white inset 2px 2px rgb(170, 255, 252); */
+            font-family: 'face';
+            font-weight: 200;
+        }
+        #dots{
+             color: white;
+             height: 60px;
+             width: 100px;
+             border:2px solid white;
+             display:grid;
+             place-items:center;
+             border-radius: 10px;
+             font-size: 30px;
+             font-family: 'dotsone';
+             text-transform: uppercase;
+
+        }
+        #lcd{
+            color: white;
+             height: 60px;
+             width: 100px;
+             border:2px solid white;
+             display:grid;
+             place-items:center;
+             border-radius: 10px;
+             font-size: 30px;
+             font-family: "face";
+            
+        }
+        #dig{
+            color: white;
+             height: 60px;
+             width: 100px;
+             border:2px solid white;
+             display:grid;
+             place-items:center;
+             border-radius: 10px;
+             font-size: 40px;
+             font-family: "digitalone";
+        }
+        article{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px;
+        }
+    
+       
+    </style>
+</head>
+<body>
+   
+    <section>
+        <main>   <div id="hourbox">
+            <h1 id="hours">00</h1>
+            
+            </div>
+            <h1 class="colon">:</h1>
+        
+             <div id="minutebox"><h1 id="minutes">00</h1></div>
+             <h1 class="colon">:</h1>
+    <div id="secondbox"><h1 id="seconds">00</h1></div>
+     </main>
+     </section>
+    <header >Digital Clock
+        
+    </header>
+<article>  
+    <aside id="dots">dot</aside>
+    <aside id="lcd">lcd</aside>
+    <aside id="dig">dig</aside>
+</article>
+  
+
+   
+    
+    <script src="./digitalclockver2.js"></script>
+</body>
+</html>
